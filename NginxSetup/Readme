@@ -1,0 +1,12 @@
+sudo apt-get install nginx
+Edit
+/etc/nginx/sites-available/default
+
+Test configurations
+sudo nginx -t
+
+Start nginx
+sudo systemctl restart nginx
+
+Permit traffic to Nginx through the firewall, if you have it enabled:
+sudo ufw allow 'Nginx Full'
